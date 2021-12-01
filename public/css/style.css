@@ -1,0 +1,187 @@
+/* 
+
+    box-shadow: -1px 12px 36px -9px rgba(0, 0, 0, .32);
+    box-shadow: 0 1px 3px rgba(0,0,0,.15);
+*/
+
+
+:root {
+    --color-primary: #7451eb;
+    --color-secondary: #4ED8D9;
+    --color: #2c3e50;
+}
+
+body {
+    background-color: var(--color-secondary) !important;
+}
+
+/* style page Inscrpition Connection */
+.containerRegistration,
+.containerLogin,
+.containerLoginAdmin {
+    border-left: 9px solid #7451eb;
+    border-radius: 15px;
+    background: #fff;
+    height: auto;
+    max-width: 600px;
+    box-shadow: -1px 12px 36px -9px rgba(0, 0, 0, .32);
+}
+
+/* style titre page Inscrpition Connection */
+.containerRegistration-title,
+.containerLogin-title,
+.containerLoginAdmin-title {
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #7451eb;
+    box-shadow: black;
+    letter-spacing: 2px;
+}
+
+/* style btn page Inscrpition Connection */
+.containerRegistration .btn,
+.containerLogin .btn,
+.containerLoginAdmin .btn {
+    border-radius: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400 !important;
+    color: #0a0e13 !important;
+}
+
+/* CUSTOM CHECKBOX */
+.custom-control-input:checked~.custom-control-label::before {
+    background-color: #7451eb !important;
+}
+
+/* CUSTOME BTN SUBMIT */
+.btn-submit {
+    background-color: #7451eb !important;
+    color: #ffffff !important;
+}
+
+/* BTN CUSTOME HOME */
+.block-btn .btn-custome {
+    border: 1px solid #7451eb !important;
+    border-radius: 20px;
+    background-color: #ffffff !important;
+    color: #7451eb !important;
+    transition: 0.5s;
+
+}
+
+.block-btn .btn-custome:hover {
+    background-color: #7451eb !important;
+    color: #ffffff !important;
+    transition: 0.3s;
+
+}
+
+input[type='text'] {
+    height: 30px !important;
+}
+
+/* STYLE containerPage */
+.containerSettingPage {
+    border-left: 9px solid #7451eb;
+    border-radius: 15px;
+    background: #fff;
+    height: auto;
+    box-shadow: -1px 12px 36px -9px rgba(0, 0, 0, .32);
+}
+
+/* STYLE TITRE containerPage */
+.containerSettingPage-title {
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #7451eb;
+    box-shadow: black;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+}
+
+/* STYLE LISTE GROUP */
+.list-group {
+    /* border-radius: 20px; */
+    box-shadow: 0 1px 3px rgba(0,0,0,.15);
+}
+
+/* STYLE LISTE GROUP ACTIVE */
+.list-group-item.active {
+    color: #fff;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+/* STYLE TABE PANE */
+.containerSettingPage .tab-pane {
+    box-shadow: 0 1px 3px rgba(0,0,0,.15);
+}
+
+
+
+
+
+/* BLOCK PICTURE FILE */
+.containerRegistration-blockPicture:hover, 
+.containerSettingPage-blockPicture:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.containerRegistration-blockPicture__picture, 
+.containerSettingPage-blockPicture__picture {
+    display: block;
+
+    width: 120px;
+    height: 120px;
+
+    border-radius: 9px;
+    cursor: pointer;
+
+    transition: 0.9s;
+
+}
+
+.containerRegistration-blockPicture__picture:hover, 
+.containerSettingPage-blockPicture__picture:hover {
+    /* opacity: 0.7; */
+    transition: 0.3s;
+
+}
+
+.containerRegistration-blockPicture__option, 
+.containerSettingPage-blockPicture__option  {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+
+    /* opacity: 0.7; */
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.containerRegistration-blockPicture:hover .containerRegistration-blockPicture__option, 
+.containerSettingPage-blockPicture:hover .containerSettingPage-blockPicture__option {
+    opacity: 1;
+
+}
+
+.containerRegistration-blockPicture__option .icon-picture,
+.containerSettingPage-blockPicture__option .icon-picture {
+    transition: 0.5s;
+    color: #666;
+}
+
+.containerRegistration-blockPicture__option .icon-picture:hover,
+.containerSettingPage-blockPicture__option .icon-picture:hover {
+    color: #000000;
+    transition: 0.3s;
+}
+/* BLOCK PICTURE FILE */

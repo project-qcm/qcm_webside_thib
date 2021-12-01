@@ -1,0 +1,66 @@
+/*  */
+/*  style du menu header */
+/*  */
+
+.menu_header {
+    background-color: white;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #dee2e6;
+    z-index: 1;
+}
+
+/* Couleur des titres affichés dans la barre */
+.navbar .navbar-brand {
+    color: #825cff;
+    text-transform: uppercase;
+}
+
+/* Couleur utilisée pour les liens */
+.navbar .navbar-nav>li>a {
+    color: #666;
+}
+
+/* Couleur utilisée pour les liens lorsque la souris passe dessus */
+.navbar .navbar-nav>li>a:hover,
+.navbar .navbar-nav>li>a:focus {
+    color: rgb(34, 33, 33);
+}
+
+/* Couleur utilisée pour le lien actif (celui qui est affiché sur la page) */
+.navbar .navbar-nav>.active>a,
+.navbar .navbar-nav>.active>a:hover,
+.navbar .navbar-nav>.active>a:focus {
+    color: rgb(0, 0, 0);
+    /* background-color: #E7E7E7; */
+}
+
+#profilImageNav {
+
+    width: 40px;
+    height: 40px;
+    /* width: 60px;
+    height: 60px; */
+}
+
+#profilImage {
+    width: 60px;
+    height: 60px;
+}
+
+/* btn navbar default */
+.block-btnHeader .btn {
+    background-color: #ffffff;
+    border: 1px solid #825cff;
+    border-radius: 20px;
+    height: 40px;
+    color: #825cff !important;
+}
+.block-btnHeader .btn:hover{
+    background-color: #825cff;
+    border: 1px solid #825cff;
+    border-radius: 20px;
+    height: 40px;
+    color: #ffffff !important;
+    transition: 0.5s;
+    
+}

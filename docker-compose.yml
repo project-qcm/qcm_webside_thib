@@ -1,0 +1,36 @@
+version: '3'
+
+volumes:
+    logs:
+        driver: local
+
+services:
+    php-apache:
+        container_name: qcm_website_thib.php-apache 
+        image: web
+        build: .
+        working_dir: /var/www
+        command: php -S 0.0.0.0:${LOCAL_PORT} -t public
+        environment:
+            docker: "true"
+        ports:  
+            - ${DIST_PORT}:${LOCAL_PORT}
+        volumes:
+            - .:/var/www
+            - logs:/var/www/logs
+    db: 
+        container_name: qcm_website_thib.mariadb
+        image: mariadb
+        environment: 
+            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+            MYSQL_DATABASE: ${MYSQL_DATABASE}
+            MYSQL_USER: ${MYSQL_USER}
+            MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+        volumes:
+            # - ./mysql/:/docker-entrypoint-initdb.d
+            - ./mysql/qcm_website_thib.sql:/docker-entrypoint-initdb.d/qcm_website_thib.sql
+    phpmyadmin:
+        container_name: qcm_website_thib.phpmyadmin
+        image: phpmyadmin
+        ports:
+            - ${DIST_POR_PHPMYADMINT}:${LOCAL_PORT_PHPMYADMIN}

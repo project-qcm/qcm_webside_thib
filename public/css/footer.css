@@ -1,0 +1,23 @@
+/* footer */
+.bem-footer__content-container {
+    /* background-color: #666; */
+    background-color: #7451eb;
+    color: #f1f1f1;
+}
+
+.bem-footer__content-container a {
+    color: #f1f1f1;
+}
+
+.bem-footer__fab a:hover {
+    color: #4ED8D9;
+    text-decoration: none;
+}
+
+.bem-footer__policy a {
+    font-size: 1em;
+}
+.bem-footer__policy a:hover {
+    color: #f1f1f1;
+    /* text-decoration: none; */
+}

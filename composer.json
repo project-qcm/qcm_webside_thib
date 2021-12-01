@@ -1,0 +1,12 @@
+{
+    "name": "thibaud/qcm_website",
+    "authors": [
+        {
+            "name": "Thibaud Turlan",
+            "email": "thibaud.turlan@orange.fr"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}

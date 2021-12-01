@@ -1,0 +1,82 @@
+.containerEditQcm {
+    /* border: 1px solid #7451eb; */
+    border-left: 9px solid #7451eb;
+    border-radius: 15px;
+    background: #fff;
+    height: auto;
+    box-shadow: -1px 12px 36px -9px rgba(0, 0, 0, .32);
+}
+
+.containerEditQcm_title {
+    position: relative;
+    top: -7px;
+    
+    letter-spacing: 2px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: #7451eb;
+
+}
+
+
+.containerEditQcm-blockPicture {
+    position: relative;
+    border: 1px solid #666;
+    background-color: #666;
+    border-radius: 20px;
+
+    width: 150px; 
+    height: 230px;
+
+    transition: 0.9s;
+}
+.containerEditQcm-blockPicture:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.containerEditQcm-blockPicture__picture {
+    display: block;
+
+    width: 150px; 
+    height: 230px;
+
+    border-radius: 9px;
+    cursor: pointer;
+
+    transition: 0.9s;
+}
+
+.containerEditQcm-blockPicture__picture:hover {
+    /* opacity: 0.7; */
+    transition: 0.3s;
+    
+}
+
+.containerEditQcm-blockPicture__option {
+    position: absolute; 
+    bottom: 25%; 
+    left: 50%;
+
+    /* opacity: 0.7; */
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+.containerEditQcm-blockPicture:hover .containerEditQcm-blockPicture__option {
+    opacity: 1;
+    
+}
+
+.containerEditQcm-blockPicture__option .icon-picture {
+    transition: 0.5s;
+    color: #666;
+}
+.containerEditQcm-blockPicture__option .icon-picture:hover {
+    color: #000000;
+    transition: 0.3s;
+}
